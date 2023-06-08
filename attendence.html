@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance Tracking</title>
+	<link rel="stylesheet" type="text/css" href="attendence.css">
+</head>
+<body background="attend.jpg">
+	
+	<div class="container">
+    
+		<h1>Attendance Tracking</h1>
+		<form>
+			<label for="attendance">Enter attendance:</label>
+			<input type="text" id="attendance" name="attendance" placeholder="Present, Absent, Late, etc.">
+			<input type="submit" value="Submit" onclick="markAttendance()">
+		</form>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Attendance</th>
+			</tr>
+			<tr>
+				<td>Ramya</td>
+				<td ><span id="john-attendance" value="P" ></span></td>
+			</tr>
+			<tr>
+				<td>Chandan</td>
+				<td><span id="jane-attendance" value="A"></span></td>
+			</tr>
+			<tr>
+				<td>Ramu</td>
+				<td><span id="tom-attendance" value="L"></span></td>
+			</tr>
+            <tr>
+				<td>Raju</td>
+				<td><span id="Raju-attendance" value="" ></span></td>
+			</tr>
+		</table>
+	</div>
+	<script src="attendence1.js">
+	</script>
+</body>
+</html>
